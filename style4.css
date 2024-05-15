@@ -1,0 +1,197 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Container Styles */
+.container {
+ width: 100%;
+ height: 100%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Ledger Styles */
+.ledger {
+    margin-bottom: 20px;
+}
+
+.ledger h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.ledger h4 {
+    color: #666;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+/* Income and Expense Container Styles */
+.inc-exp-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.inc-exp-container div {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+
+.inc {
+    border: 2px solid #28a745;
+}
+
+.exp {
+    border: 2px solid #dc3545;
+}
+
+/* Form Styles */
+.form-control {
+    margin-bottom: 15px;
+}
+
+.form-control label {
+    display: block;
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.form-control input[type="text"],
+.form-control input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+.transaction{
+    width: 100%;
+    height: 100%;
+    border: 2px solid red;
+}
+.transaction li{
+margin: 18px;
+width: 400px;
+height: 50px;
+}
+
+/* Transaction Styles */
+.transaction h3 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.trans {
+    list-style: none;
+}
+
+.trans li {
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.trans li.exp {
+    border-left: 3px solid #dc3545;
+}
+
+.trans li.inc {
+    border-left: 3px solid #28a745;
+}
+
+.trans li span {
+    float: right;
+    color: #666;
+}
+
+/* Canvas Container Styles */
+.canvas-container {
+    margin-top: 50px;
+    border: 2px solid red;
+}
+
+canvas{
+    height: 500px;
+    width: 500px;
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+}
+
+/* Other Custom Styles */
+/* Add your custom styles here */
+/* Adjust the button styles */
+.delete-btn {
+    background-color: #f44336; /* Red background color */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 15px;
+    cursor: pointer;
+    float: right; 
+    text-align: center;
+   
+    /* Align to the right */
+}
+
+/* Ensure the list items (transaction items) are styled properly */
+li {
+    list-style-type: none;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* Example styling for income and expense items */
+.inc {
+    background-color: #d7ffb3; /* Light green background color for income */
+}
+
+.exp {
+    background-color: #ffb3b3; /* Light red background color for expenses */
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style4.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+    <div class="btns" style="text-align: center;">
+  <a href="instamojo.html" >Tax-Pay</a>
+<a href="AI.html" class="btn" style="text-decoration: none;">AI</a>
+<button></button>
+<button class="btn" id="logout">Logout</button>
+</div>
+<div id="userGreeting"></div> 
+    <div class="container">
+        <div class="ledger">
+            <h2>Income Expense Tracker</h2>
+            <h4>Your Balance</h4>
+            <h1 id="balance">₹ 0.00</h1>
+            <div class="inc-exp-container" >
+                <div class="inc" style="">
+                    <h4 style=""><i class="fa-solid fa-indian-rupee-sign"></i></h4>
+                    <p id="inc-amt" class="amt plus">₹ 0.00</p>
+                </div>
+                <div class="exp">
+                    <h4><i class="fa-solid fa-credit-card"></i></h4>
+                    <p id="exp-amt" class="amt minus">₹ 0.00</p>
+                </div>
+                <div class="tax">
+                    <h4>Taxes</h4>
+                    <p id="tax-amt" class="amt minus">₹ 0.00</p>
+                </div>
+            </div>
+            <form id="transactionForm">
+                <div class="form-control">
+                    <label for="desc">Description</label>
+                    <input type="text" name="desc" id="desc" placeholder="Enter Description" />
+                </div>
+                <div class="form-control">
+                    <label for="amount">Amount</label>
+                    <input type="number" name="amount" id="amount" placeholder="Amount" />
+                </div>
+                <button class="btn" type="submit">Add Transaction</button>
+             
+            </form>
+        </div>
+        <div class="transaction">
+            <h3>Transaction Details</h3>
+            <ul class="trans" id="trans">
+
+            </ul>
+        </div>
+        <div class="canvas-container" style="height: 100%;
+        width:100%;">
+            <canvas id="myChart" style="height: 100px;
+        width: 500px;"></canvas>
+        </div>
+       
+    </div>
+   
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="login.js"></script>
+    <script src="script.js"></script>
+  
+</body>
+</html>
